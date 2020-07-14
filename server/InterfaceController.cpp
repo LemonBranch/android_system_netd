@@ -211,7 +211,7 @@ android::netdutils::Status InterfaceController::enableStablePrivacyAddresses(
         const GetPropertyFn& getProperty,
         const SetPropertyFn& setProperty) {
     if (stable_secret_disabled) {
-        return statusFromErrno(EOPNOTSUPP, "stable_secret support disabled by GrapheneOS");
+        return statusFromErrno(EOPNOTSUPP, "stable_secret support disabled by Lemon Branch");
     }
 
     const auto& sys = sSyscalls.get();
